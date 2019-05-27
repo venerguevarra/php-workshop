@@ -10,7 +10,7 @@ $flower_shop = array (
 	"orchid" => "2.00"
 );
 // Display the array values
-echo "rose costs.$flower_shop['rose'].",daisy costs".$flower_shop['daisy'].",and orchild costs ".$flower_shop['orchild'].";
+echo "rose costs" . $flower_shop['rose'] . ", daisy costs" . $flower_shop['daisy'] . " and orchild costs " . $flower_shop['orchild'] . ".";
 
 /* for each loop works only on arrays, and is used
  to loop through each key/value pair in an array */
