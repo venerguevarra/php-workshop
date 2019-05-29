@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    mariadb:
+        image: mariadb
+        container_name: mariadb
+        restart: always
+        command: --default-authentication-plugin=mysql_native_password
+        volumes:
+            - mariadb:/var/lib/mysql
+        environment:
+            MYSQL_USER: 'training'
+            MYSQL_PASSWORD: 'pass123'
+            MYSQL_ROOT_PASSWORD: "pass123"
+            MYSQL_DATABASE: 'training'
+        ports:
+            - "3306:3306"
+
+volumes:
+    mariadb:
+      driver: local
